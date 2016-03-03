@@ -32,7 +32,7 @@ li {
 /**********************HEADER**********************/
 header {
 	border-bottom: 1px solid #e5e5e5;
-	box-shadow: 0 2px 3px -2px rgba(0,0,0,.15);
+	box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
 }
 .logo {
 	margin: 30px 0 0 8px;
@@ -186,7 +186,7 @@ header {
 	text-align: left;
 	text-decoration: none;
 	color: #fff;
-	text-shadow: 0 1px 0 rgba(208,138,18,.3);
+	
 }
 .main-button-title {
 	display: inline-block;
@@ -197,14 +197,17 @@ header {
 .main-button-title h3 {
 	padding: 0;
 	margin: 0;
+	font-weight: normal;
 	font-size: 17px;
 	line-height: 18px;
 	text-transform: capitalize;
+	text-shadow: 0 1px 0 rgba(208,138,18,.3);
 }
-.main-button a em {
+.main-button a .main-button-title em {
 	font: bold 10px Arial, sans-serif;
 	text-transform: uppercase;
 	color: #d28600;
+	text-shadow: 0 1px 1px rgba(255,255,255,.5);
 }
 .main-button-coursor {
 	padding: 8px;
@@ -218,19 +221,57 @@ header {
 /**********************HEADER**********************/
 
 /**********************SECOND SECTION**********************/
-
+.second-section {
+	width: 100%;
+}
 .second-section h2 {
 	font-size: 18px;
 }
 
+.item-image-bg {
+	display: inline-block;
+	background-color: #fff;
+	margin: 1px;
+}
+.item-image-bg img {
+	display: inline-block;
+	margin: 2px;
+}
+.image-block {
+	display: inline-block;
+	background-color: #f0f0f0;
+}
+.image-block h4 {
+	margin: 0;
+	padding: 5px;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #666;
 
+	text-shadow: 0 1px 1px rgba(255,255,255,.5);
+}
+.image-block p {
+	margin: 0;
+	padding: 5px;
+	font: 11px Arial, sans-serif;
+	color: #999;
 
+	text-shadow: 0 1px 1px rgba(255,255,255,.5);
+}
+.second-section-item {
 
-
-
-
-
-
+}
+.second-section-wrapper {
+	width: 33.33%;
+}
+.second-section-item > p {
+	margin: 0;
+	padding: 10px 20px 0 10px;
+	font: 12px Arial, sans-serif;
+	line-height: 18px;
+	color: #666;
+	text-align: justify;
+}
 
 
 
