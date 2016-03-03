@@ -1,0 +1,259 @@
+body {
+	background-color: #f9f9f9;
+	font-size: 14px;
+	font-family: 'Oxygen', sans-serif;
+}
+body, ul {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	width: 972px;
+	height: 100%;
+	margin: 30px auto;
+	background-color: #fff;
+}
+.row {
+	margin: 0 20px;
+	position: relative;
+}
+nav::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+li, h1, h2 {
+	text-transform: capitalize;
+}
+li {
+	list-style-type: none;
+}
+
+/**********************HEADER**********************/
+header {
+	border-bottom: 1px solid #e5e5e5;
+	box-shadow: 0 2px 3px -2px rgba(0,0,0,.15);
+}
+.logo {
+	margin: 30px 0 0 8px;
+	display: inline-block;
+}
+.logo a {
+	display: block;
+	text-decoration: none;
+}
+.logo a h1 {
+	margin: 0;
+	text-decoration: none;
+	line-height: 1;
+	font-size: 40px;
+	font-family: "Oleo Script", sans-serif;
+	color: #000;
+}
+.logo > a > em {
+	font: normal 11px Arial, sans-serif;
+	color: #999;
+}
+.main-menu {
+	float: right;
+}
+.main-menu {
+	margin-top: 35px;
+}
+.main-menu > li {
+	position: relative;
+	display: inline-block;
+}
+.main-menu > li + li {
+	margin-left: 20px;
+}
+.main-menu > li > a {
+	position: relative;
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	color: #666;
+	border-radius: 3px;
+}
+.main-menu > li > a:hover {
+	background-color: #f5f5f5;
+	color: #000;
+}
+.main-menu > li:hover ul {
+	display: block;
+}
+
+.main-menu > li > a:hover::after {
+	display: none;
+	z-index: 1;
+	content: '';
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	bottom: -8px;
+	left: calc(50% - 8px);
+	transform: rotate(45deg);
+	background-color: #f5f5f5;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.main-menu > li:last-child > a {
+	padding: 6px 15px;
+	color: #fff;
+	text-shadow: 1px 0 1px #c68d1e;
+	background-color: #ffc24b;
+	box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, .25);
+	background-image: linear-gradient(to top, rgba(0,0,0,.1), rgba(255,255,255,.1));
+}
+.main-menu > li:last-child > a:hover {
+	color: #eee;
+}
+.inner-list {
+	display: none;
+	width: 166px;
+	position: absolute;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .06);
+	background-color: #fff;
+
+}
+.inner-list em {
+	font: 10px Arial, sans-serif;
+	text-transform: lowercase;
+	color: #aaa;
+}
+.inner-list a {
+	display: block;
+	margin: 5px;
+	padding: 10px 0;
+	text-decoration: none;
+	font-size: 12px;
+	color: #666;
+}
+.inner-list li + li a {
+	border-top: 1px solid #ddd;
+}
+.inner-list li {
+	margin: 5px;
+	border-radius: 3px;
+}
+.inner-list li:hover {
+	background-color: #f5f5f5;
+}
+
+/*image*/
+
+.main-image-wrapper {
+	display: inline-block;
+	margin: 60px 20px 60px 56px;
+	background-color: #f6f6f6;
+	box-shadow: inset 0 0 3px 1px rgba(0,0,0,.25);
+}
+.main-image {
+	width: 292px;
+	height: 189px;
+	margin: 5px;
+	background-color: #0e181a;
+	background-image: url(img/main-image.jpg);
+}
+.main-image-title {
+    margin-top: 54px;
+    vertical-align: top;
+	width: 485px;
+	display: inline-block;
+	text-align: right;
+}
+.main-image-title h2 {
+	font-size: 38px;
+	line-height: 18px;
+	color: #515151;
+}
+.main-image-title p {
+	color: #666;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #ccc;
+}
+.main-button {
+	display: inline-block;
+	border-radius: 3px;
+	background-color: #ffbf48;
+	background-image: linear-gradient(to top, rgba(0,0,0,.1), rgba(255,255,255,.1));
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.25);
+}
+.main-button a {
+	display: block;
+	text-align: left;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(208,138,18,.3);
+}
+.main-button-title {
+	display: inline-block;
+	margin: 6px;
+	padding-right: 20px;	
+	border-right: 1px solid #e0a236;
+}
+.main-button-title h3 {
+	padding: 0;
+	margin: 0;
+	font-size: 17px;
+	line-height: 18px;
+	text-transform: capitalize;
+}
+.main-button a em {
+	font: bold 10px Arial, sans-serif;
+	text-transform: uppercase;
+	color: #d28600;
+}
+.main-button-coursor {
+	padding: 8px;
+	display: inline-block;
+	width: 20px;
+	height: 100%;
+	background: url(img/main-button-coursor.png) no-repeat;
+	background-position: 7px -1px;
+}
+
+/**********************HEADER**********************/
+
+/**********************SECOND SECTION**********************/
+
+.second-section h2 {
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************SECOND SECTION**********************/
