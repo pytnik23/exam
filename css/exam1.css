@@ -2,6 +2,7 @@ body {
 	background-color: #f9f9f9;
 	font-size: 14px;
 	font-family: 'Oxygen', sans-serif;
+	color: #666;
 }
 body, ul {
 	margin: 0;
@@ -155,7 +156,7 @@ header {
 	height: 189px;
 	margin: 5px;
 	background-color: #0e181a;
-	background-image: url(img/main-image.jpg);
+	background-image: url(../img/main-image.jpg);
 }
 .main-image-title {
     margin-top: 54px;
@@ -214,7 +215,7 @@ header {
 	display: inline-block;
 	width: 20px;
 	height: 100%;
-	background: url(img/main-button-coursor.png) no-repeat;
+	background: url(../img/main-button-coursor.png) no-repeat;
 	background-position: 7px -1px;
 }
 
@@ -225,9 +226,12 @@ header {
 .second-section {
 	width: 100%;
 	font-size: 0;
+	margin-bottom: 30px;
 }
-.second-section h2 {
+.second-section h2,
+.tabs h2 {
 	font-size: 18px;
+	color: #222;
 }
 
 .item-image-bg {
@@ -276,10 +280,25 @@ header {
 	text-align: justify;
 }
 
+/* Tabs section */
 
-
-
-
+.tabs-container {
+	border: 1px solid #ececec;
+	border-radius: 3px;
+}
+.tab-title {
+	display: inline-block;
+	margin: 0;
+	padding: 10px;
+	-border: 1px solid #ececec;
+	border-right: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
+	text-transform: capitalize;
+}
+h3.last {
+	border-right: none;
+}
+/* Tabs section */
 
 
 
