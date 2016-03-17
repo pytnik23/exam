@@ -281,25 +281,108 @@ header {
 }
 
 /* Tabs section */
-
+.tabs {
+	border-bottom: 1px solid #e5e5e5;
+	box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+}
+.tabs h2 {
+	text-transform: none;
+}
 .tabs-container {
+	position: relative;
+	height: 250px;
+	width: 100%;
 	border: 1px solid #ececec;
-	border-radius: 3px;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-bottom: 40px;
 }
-.tab-title {
-	display: inline-block;
-	margin: 0;
-	padding: 10px;
-	-border: 1px solid #ececec;
-	border-right: 1px solid #ececec;
+.tabs-titles {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 40px;
+	width: 100%;
+	background-color: #fcfcfc;
 	border-bottom: 1px solid #ececec;
-	text-transform: capitalize;
+	clear: both;
 }
-h3.last {
-	border-right: none;
+.tab-item {
+	float: left;
 }
-/* Tabs section */
+.tab-item label {
+	display: block;
+	padding: 12px 15px;
+	border-right: 1px solid #ececec;
+}
+.tab-item [type="radio"]:checked ~ label {
+	background-color: #fff;
+}
 
+.tab-item [type="radio"] {
+	display: none;
+}
+.tab-content {
+	z-index: -1;
+	position: absolute;
+	top: 41px;
+	left: 0;
+	right: 0;
+	padding: 10px 20px;
+	font-size: 0;
+}
+.tab-item [type=radio]:checked ~ label ~ .tab-content {
+  z-index: 1;
+}
+.tab-content h4 {
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ececec;
+	font-size: 16px;
+}
+.tab-content-item {
+	display: inline-block;
+	width: 33.33%;
+	clear: both;
+	vertical-align: middle;
+}
+.tab-content-item ul {
+	margin-left: 25px;
+}
+.tab-content-item ul li {
+	font-size: 14px;
+	list-style-type: disc;
+}
+.tab-content-item ul li a {
+	text-decoration: none;
+	line-height: 1.5;
+}
+.tab-content-item ul li a:hover {
+	text-decoration: underline;
+}
+.tab-content-item img {
+	float: left;
+	border: 2px solid #fff;
+	box-shadow: 0 0 1px #ccc;
+}
+.tab-content-item h5 {
+	margin: 0;
+	padding: 0 10px 15px 130px;
+	font-size: 14px;
+}
+.tab-content-item p {
+	font-size: 13px;
+	margin: 0;
+	padding: 0 10px 0 130px;
+}
+
+/* Tabs section end*/
+
+/*FOOTER*/
+
+
+
+/*FOOTER end*/
 
 
 
