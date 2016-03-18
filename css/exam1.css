@@ -8,14 +8,56 @@ body, ul {
 	margin: 0;
 	padding: 0;
 }
-.wrapper {
+.wrapper,
+.wrapper::before,
+.wrapper::after,
+.wrapper-shadow {
+	position: relative;
 	width: 972px;
 	height: 100%;
 	margin: 30px auto;
 	background-color: #fff;
+	box-shadow: 0 1px 1px 0px rgba(0,0,0,.1);
 }
 .wrapper::before {
-	
+	content: '';
+	position: absolute;
+	top: 3px;
+	z-index: -1;
+	margin: 0;
+}
+.wrapper::after {
+	content: '';
+	position: absolute;
+	top: 6px;
+	z-index: -2;
+	margin: 0;
+}
+.wrapper-shadow {
+	z-index: -3;
+  	position: absolute;
+  	bottom: -30px;
+  	left: 0;
+  	right: auto;
+  	content: "";
+  	height: 100px;
+}
+.wrapper-shadow::before,
+.wrapper-shadow::after {
+	z-index: -3;
+  	position: absolute;
+  	content: "";
+  	bottom: 10px;
+  	left: 20px;
+  	width: 50%;
+  	top: 1px;
+  	box-shadow: 0 13px 18px rgba(0,0,0,.4);
+  	transform: rotate(-2deg);
+}
+.wrapper-shadow::after {
+	transform: rotate(2deg);
+	right: 20px;
+	left: auto;
 }
 .row {
 	margin: 0 20px;
