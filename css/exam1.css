@@ -14,6 +14,9 @@ body, ul {
 	margin: 30px auto;
 	background-color: #fff;
 }
+.wrapper::before {
+	
+}
 .row {
 	margin: 0 20px;
 	position: relative;
@@ -380,8 +383,60 @@ header {
 
 /*FOOTER*/
 
-
-
+footer {
+	padding: 5px 0 20px;
+	font-size: 0;
+}
+.col-6 {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+footer h3 {
+	font: bold 12px Arial, sans-serif;
+	text-transform: uppercase;
+	color: #ffad19;
+}
+footer ul {
+	width: 75%;
+}
+footer ul li {
+	font: 12px /30px Arial, sans-serif;
+	border-bottom: 1px solid #ececec;
+}
+footer ul li:last-child {
+	border-bottom: none;
+}
+footer ul li a {
+	text-decoration: none;
+	color: #666;
+}
+footer ul li a:hover {
+	color: #888;
+}
+.last-ul {
+	width: 100%;
+}
+.last-ul li {
+	position: relative;
+	padding: 12px 0 10px 40px;
+	line-height: 12px;
+}
+.last-ul li span {
+	display: block;
+	padding-top: 5px;
+	font-size: 11px;
+	color: #aaa;
+}
+.last-ul li::before {
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 20px;
+	top: 12px;
+	left: 0;
+	background-image: url(../img/icon-footer.png);
+}
 /*FOOTER end*/
 
 
