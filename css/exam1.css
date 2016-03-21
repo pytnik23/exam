@@ -215,14 +215,35 @@ header {
 	display: inline-block;
 	margin: 60px 20px 60px 56px;
 	background-color: #f6f6f6;
-	box-shadow: inset 0 0 3px 1px rgba(0,0,0,.25);
+	box-shadow: 	inset 0 0 3px 1px rgba(0,0,0,.25),
+					0 19px 12px -20px rgba(0,0,0,.9);
 }
 .main-image {
+	position: relative;
 	width: 292px;
 	height: 189px;
 	margin: 5px;
 	background-color: #0e181a;
 	background-image: url(../img/main-image.jpg);
+}
+.main-image-slider {
+	position: absolute;
+	bottom: 0;
+	left: 4px;
+}
+.slider-title {
+	position: absolute;
+	top: 4px;
+	left: 44px;
+	font: 13px /18px Arial, sans-serif;
+	color: #f6f6f6;
+}
+.slider-title span {
+	font-size: 11px;
+	color: #ffc14c;
+}
+.slider-title span:last-child {
+	color: #676767;
 }
 .main-image-title {
     margin-top: 54px;
@@ -301,12 +322,76 @@ header {
 }
 
 .item-image-bg {
+	position: relative;
 	background-color: #fff;
 	margin: 1px;
 }
 .item-image-bg img {
 	display: inline-block;
 	margin: 2px;
+}
+.img-hover {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0 0 100px 1px rgba(0,0,0,.55);
+}
+.item-controls {
+	position: absolute;
+	top: 43px;
+	left: 74px;
+}
+.item-controls a + a {
+	margin-left: 5px;
+}
+.item-control-out {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	content: '';
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	background-color: rgba(0,0,0,.3);
+}
+.item-control-out.big {
+	height: 62px;
+	width: 62px;
+}
+.item-control-in {
+	position: relative;
+	top: 5px;
+	left: 5px;
+	height: 25px;
+	width: 25px;
+	border-radius: 100%;
+	background-color: #fff;
+	background-image: linear-gradient(to top, rgba(0,0,0,.1), rgba(255,255,255,.1));
+	box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+.item-control-in.big {
+	width: 46px;
+	height: 46px;
+	top: 8px;
+	left: 8px;
+}
+.item-control-in img {
+	position: absolute;
+	top: 6px;
+	left: 6px;
+}
+.item-controls a:nth-child(2) img {
+	top: 11px;
+	left: 10px;
+}
+.item-controls a:nth-child(3) img {
+	left: 4px;
+}
+.image-block:hover .img-hover {
+	display: block;
 }
 .image-block {
 	display: inline-block;
